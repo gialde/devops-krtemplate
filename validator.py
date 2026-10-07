@@ -22,3 +22,9 @@ def validate_snils(snils: str) -> bool:
     """Проверяет СНИЛС: 11 цифр с разделителями."""
     digits = snils.replace("-", "").replace(" ", "")
     return len(digits) == 11 and digits.isdigit()
+
+
+def validate_snils(snils: str) -> bool:
+    """Проверяет СНИЛС: 11 цифр с разделителями."""
+    digits = snils.replace("-", "").replace(" ", "")
+    return len(digits) == 11 and digits.isdigit()
